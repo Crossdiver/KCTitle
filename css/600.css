@@ -53,20 +53,12 @@ header {
 	width: 100%;
 	height: 200px;
 	background-color: #6E7252;
-	background-image: url('http://ikelewis.com/frmichaels/img/FatherMichaelsLogoNoTextHalf.png');
-	background-repeat: no-repeat;
-	background-position: bottom center;
 	z-index: 0;
 }
 
 .main {
 	padding-top: 250px;
 }
-
-#bio img {
-	width: 60%;
-}
-
 
 
 
