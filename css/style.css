@@ -406,9 +406,11 @@ h2 {
 }
 
 #logo {
-	width: 100px;
+	width: 50px;
 	float: left;
 	z-index: -500;
+	position: relative;
+	top: -16px;
 }
 
 #logo img {
