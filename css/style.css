@@ -470,12 +470,12 @@ nav.top-nav li a {
 }
 
 nav.top-nav li a:hover {
-  text-shadow: 0px -1px 0px #000;
-  color: #fff;
+  text-shadow: 0px -1px 0px #aaa;
+  color: #222;
 }
 
 nav.top-nav li a:hover, nav li.active a {
-  background-color: #4a5a19;
+  background-color: #539dbc;
 }
 
 nav.top-nav .dropdown {
@@ -499,7 +499,7 @@ nav.top-nav li ul {
 
 nav.top-nav li ul li {
   float: none!important; 
-  border-bottom: 1px solid #4d5b22; 
+  border-bottom: 1px solid #539dbc; 
   width: 125px;
 }
 
@@ -510,7 +510,7 @@ nav.top-nav li ul li a {
 }
 
 nav.top-nav li ul li a:hover {
-  background-color: #4a5a19;
+  background-color: #539dbc;
 }
 
 nav.top-nav li ul li.arrow { 
