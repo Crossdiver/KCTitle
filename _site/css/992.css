@@ -51,7 +51,7 @@ header {
 }
 
 header h1 {
-	
+
 }
 
 .main {
@@ -64,6 +64,11 @@ header h1 {
 
 body {
 	max-width: 892px;
+}
+
+#logo {
+	position: relative;
+	top: -20px;
 }
 
 

@@ -115,7 +115,7 @@ text-align : justify; }
 
 ul, 
 ol { 
-margin : 0 0 1.5em -24px; 
+margin : 0.1 0 1.5em -24px; 
 padding : 0 0 0 24px; }
 
 li ul, 
@@ -344,26 +344,30 @@ background-color : rgb(240,221,221); }
 
 
 html {
-	background: url('../img/bg2.gif') repeat;mablib@u.washington.edu 206-543-4164
+	background: url('../img/bg2.gif') repeat;
 }
 
+
+body {
+	padding-bottom: 20px;
+}
 
 header {
 	width: 100%;
 	z-index: 0;
-	background: #f2f2f2;
+	border-bottom: 1px #000 solid;
 }
 
 .main {
-	padding-top: 0px;
-	margin:0px 5px 5px 5px;
+	padding: 10px 5px 5px 5px;
+	margin-top: 10px;
 }
 
 header h1 {
-	text-align: center;
+	text-align: right;
 	font-family: 'IM Fell English', serif;
-	margin-bottom: 0px;
-	background: #ccc;
+	margin-bottom: 5px;
+	color: #000;
 }
 
 .content h1 {
@@ -395,6 +399,16 @@ h2 {
 
 .content {
 	background: #f2f2f2;
+}
+
+#logo {
+	width: 100px;
+	float: left;
+	z-index: -500;
+}
+
+#logo img {
+	width: 100%;
 }
 
 
@@ -432,6 +446,7 @@ nav.top-nav {
 nav.top-nav ul {
   margin: 0px; 
   padding: 0px;
+  float: right;
 }
 
 /* Top level */
@@ -502,6 +517,56 @@ nav.top-nav li ul li.arrow {
   height: 10px; 
   margin-top: -22px; 
   margin-bottom: 10px;
+}
+
+
+
+
+.expandedform {
+  overflow: hidden;
+}
+.expandedform .row {
+  padding: .3em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  clear: both;
+}
+.expandedform label, .expandedform .row p, .expandedform .row div, 
+.expandedform input, .expandedform select, .expandedform textarea {
+  float: left;
+}
+/* change column widths for labels and inputs */
+.expandedform .text {
+  width: 80%;
+}
+.expandedform label, .expandedform .row p {
+  width: 25%;
+  margin: 0em 1em .5em 0;
+  text-align: right;
+  white-space: normal;
+  overflow: hidden;
+
+}
+.expandedform .row div {
+  white-space: nowrap;
+  overflow: hidden;
+  clear: none;
+}
+/* labels and form inputs inside of divs should not float */
+.expandedform .row div * {
+  float: none;
+  clear: none;
+}
+.expanded input.checkbox, .expanded input.radio, .expanded select {
+  margin-top: 1.5em;
+}
+.expandedform div div input {
+  margin-right: 0;
+}
+
+textarea {
+	width: 98.5%;
+	height: 100px;
 }
 
 

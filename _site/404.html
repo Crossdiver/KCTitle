@@ -19,7 +19,7 @@ License: http://creativecommons.org/licenses/MIT
 <head>
 <meta charset="utf-8">
 
-<title>320 and Up</title>
+<title> Klickitat County Title Company </title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -45,6 +45,10 @@ License: http://creativecommons.org/licenses/MIT
 
 <!-- JavaScript -->
 <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- Fonts -->
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+English' rel='stylesheet' type='text/css'>
+
 
 <!-- For iPhone 4 -->
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
@@ -74,29 +78,41 @@ License: http://creativecommons.org/licenses/MIT
 <body class="clearfix">
 
 <header role="banner">
-<h1>320 and Up</h1>
+	<div id="logo"><img src="../img/Logo-small.png"></div>
+	<h1>Klickitat County Title Company</h1>
+
+	<nav class="top-nav">
+		<ul>
+			<li><a href="index.html" name="home" class="nav">Home</a></li>
+			<li><a href="contact.html" name="contact" class="nav">Contact</a></li>
+		</ul>
+	</nav>
 </header>
 
 <div class="content clearfix">
 
-<h1>Page not found</h1>
+<div role="main" class="main">
+   <section class="content">
+  <h1>"Lewis, I think we're lost."</h1>
 
-<div role="main">
-<p>Sorry, but the page you&#8217;re looking for doesn&#8217;t not exist.</p>
+<h2>&nbsp; &nbsp; &nbsp; &nbsp; - Captain William Clark</h2>
+
+<p>Well, looks like we aren't able to find the page you're looking for.</p>
 <p>It looks like this was either the result of:</p>
 
 <ul>
 <li>A mis-typed address</li>
 <li>An out-of-date link</li>
 </ul>
- 
-<script>var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2), GOOG_FIXURL_SITE = location.host;</script>
-<script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+
+<p>You could try going <a href="index.html">home</a>, calling your mom, or sending out some smoke signals.</p>
+
+<p>Oh, and by the way, our staff has been alerted to this. <a href="contact.html">Contact us</a> if the problem keeps coming back.</p>
 </div>
 
-<div role="complementary">
-</div>
+<div role="complementary" id="complementary">
 
+</div>
 </div>
 
 <footer role="contentinfo" class="clearfix">
@@ -121,13 +137,24 @@ yepnope({
 	test : Modernizr.mq('(min-width)'),
 	nope : ['js/libs/respond.min.js']
 });
+
+// StickyScroller
+$(document).scroll(function(){
+	if ($(window).width() >= 992) {
+		if ($(document).scrollTop() >= 150) {
+			$('#complementary').removeClass('locked').addClass('floating');
+		} else {
+			$('#complementary').removeClass('floating').addClass('locked');
+		}
+	}
+});
 </script>
 
 <!-- http://mths.be/aab -->
-<script>
+<!-- <script>
 var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
+</script> -->
 
 
 </body>
