@@ -85,6 +85,7 @@ License: http://creativecommons.org/licenses/MIT
 		<ul>
 			<li><a href="index.html" name="home" class="nav">Home</a></li>
 			<li><a href="contact.html" name="contact" class="nav">Contact</a></li>
+			<li><a href="order.html" name="order" class="nav">Order</a></li>
 		</ul>
 	</nav>
 </header>
@@ -136,6 +137,8 @@ yepnope({
 	test : Modernizr.mq('(min-width)'),
 	nope : ['js/libs/respond.min.js']
 });
+
+$('#phone').mask("(999) 999-9999", {placeholder:"_"});
 
 // StickyScroller
 $(document).scroll(function(){
