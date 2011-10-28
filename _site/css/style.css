@@ -421,6 +421,14 @@ h2 {
 	text-align: center;
 }
 
+.hide {
+	display: none;
+}
+
+.legaldesc {
+	margin-left: 0;
+}
+
 
 
 /* NAVIGATION */
@@ -551,8 +559,8 @@ nav.top-nav li ul li.arrow {
   width: 80%;
 }
 .expandedform label, .expandedform .row p {
-  width: 25%;
-  margin: 0em 1em .5em 0;
+  width: 40%;
+  margin: 0em 0.5em 0.2em 0;
   text-align: right;
   white-space: normal;
   overflow: hidden;

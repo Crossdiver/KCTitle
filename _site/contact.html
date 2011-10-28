@@ -95,6 +95,9 @@ License: http://creativecommons.org/licenses/MIT
 <div role="main" class="main">
    <section class="content">
   <h1>Contact Us</h1>
+  
+
+  
   <form class="expandedform">
   	<div class="row"><label for="name">Name: </label>
   	<input type="text" placeholder="Your Name" name="name" /></div>
@@ -103,6 +106,7 @@ License: http://creativecommons.org/licenses/MIT
   	<div class="row"><label for="message">Message: </label>
   	<textarea name="message"> </textarea></div>
   	<div class="row"><label for="submit"></label><input type="submit" value="Lick. Stamp. Flag up." name="submit"></div>
+  </form>
 
 </section>
 </div>
@@ -135,7 +139,7 @@ yepnope({
 	nope : ['js/libs/respond.min.js']
 });
 
-$('#phone').mask("(999) 999-9999", {placeholder:"_"});
+$('.phone').mask("(999) 999-9999", {placeholder:"_"});
 
 // StickyScroller
 $(document).scroll(function(){
