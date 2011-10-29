@@ -70,6 +70,13 @@ body {
 	top: -20px;
 }
 
+#map {
+	position: absolute;
+	top: 630px;
+	right: 16%;
+	width: 200px;
+}
+
 
 
 
