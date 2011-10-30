@@ -63,11 +63,11 @@ header h1 {
 }
 
 body {
-	max-width: 892px;
+	max-width: 795px;
 }
 
 #logo {
-	top: -20px;
+	top: -26px;
 }
 
 #map {
@@ -77,6 +77,9 @@ body {
 	width: 200px;
 }
 
+.nowrap {
+	clear: none;
+}
 
 
 

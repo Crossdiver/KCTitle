@@ -99,7 +99,7 @@ textarea {
 
 #logo {
 	position: relative;
-	width: 100px;
+	width: 85px;
 }
 
 .imgmobile {
@@ -109,6 +109,12 @@ textarea {
 .legaldesc {
 	margin-left: 28%;
 }
+
+hr {
+	position: relative;
+	top: -26px;
+}
+
 
 /* 12 COMPLEMENTARY 		============================================================================= */
 /* 13 CONTENTINFO 			============================================================================= */
