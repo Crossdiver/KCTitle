@@ -16,8 +16,8 @@
 <body>
 
 <?php
-
 require_once('recaptchalib.php');
+
   $privatekey = "6LdwpckSAAAAAMRk-UxH336Bq06HnPTusZXjzC2M";
   $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
@@ -27,14 +27,14 @@ require_once('recaptchalib.php');
 function sendForm($s, $m) {
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		mail("ikelewis678@gmail.com", $s, $m, $headers);
+		mail("kctitle@kctitle.net", $s, $m, $headers);
 	}
 
 function success($t) {
 	if ($t == "order") {
-		http_redirect("http://kctitle.net/success.php?t=order", array("t" => "order"));
+		echo "<script language=javascript>window.location = \"success.php?t=order\"</script>";
 	} elseif ($t == "contact") {
-		http_redirect("http://kctitle.net/success.php?t=order", array("t" => "contact"));
+		echo "<script language=javascript>window.location = \"success.php?t=contact\"</script>";
 	} else {
 		echo "Hmmm... seems we're hung up somewhere. It's not your fault... would you mind calling 509-773-5804? We'll get right on it!";
 	}
@@ -96,6 +96,9 @@ if ($_POST["f"] == 'order') {
 			$out .= ", Lender";
 		if ($sendToSelling == "on")
 			$out .= ", Selling Agent";
+		if ($note) {
+			$out .= "<br><b>Note:</b><br>" . $note;
+		}
 
 		$out .= "</body></html>";
 
@@ -111,7 +114,7 @@ if ($_POST["f"] == 'order') {
 
 		$out = "<html><head><title>Sending...</title></head><style>.heading {color: #777;}.heading a {color: #777}</style><body><span class=\"heading\">Hi there,<br>You just got an email from " . $name . " (<a href=\"mailto:" . $email . "\">" . $email . "</a>) via the website. <br>------</span><br>";
 
-		$out .= "<p style=\"font-size: 1.2em;\">" . nl2br($message) . "</p>";
+		$out .= "<p style=\"font-size: 1.2em;\">" . stripslashes(nl2br($message)) . "</p>";
 
 		$out .= "</body></html>";
 
