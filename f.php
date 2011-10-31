@@ -32,11 +32,9 @@ function sendForm($s, $m) {
 
 function success($t) {
 	if ($t == "order") {
-		header('Location: http://kctitle.net/success.php?t=order');
-		die();
+		http_redirect("http://kctitle.net/success.php?t=order", array("t" => "order"));
 	} elseif ($t == "contact") {
-		header('Location: http://kctitle.net/success.php?t=contact');
-		die();
+		http_redirect("http://kctitle.net/success.php?t=order", array("t" => "contact"));
 	} else {
 		echo "Hmmm... seems we're hung up somewhere. It's not your fault... would you mind calling 509-773-5804? We'll get right on it!";
 	}
