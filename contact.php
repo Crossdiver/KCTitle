@@ -57,7 +57,7 @@ var RecaptchaOptions = {
   <form class="expandedform" action="f.php" method="post">
   	<input type="hidden" name="f" value="contact" />
   	<div class="row"><label for="name">Name: </label>
-  	<input type="text" placeholder="Your Name" name="name" required autofocus /></div>
+  	<input type="text" placeholder="Your Name" name="name" required /></div>
   	<div class="row"><label for="email">Email: </label>
   	<input type="email" placeholder="joe@i.c.wa.us.gov.edu" name="email" required /></div>
   	<div class="row"><label for="message">Message: </label>
@@ -69,7 +69,7 @@ var RecaptchaOptions = {
           require_once('recaptchalib.php');
           $publickey = "6LdwpckSAAAAACzu6wTfcnj8RdgxnsNsBi1_FtLf"; // you got this from the signup page
           echo recaptcha_get_html($publickey);
-        ?>
+    ?>
     </div>
 
   	<div class="row"><label for="submit"></label><input type="submit" value="Lick. Stamp. Flag up." name="submit"></div>

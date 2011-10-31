@@ -30,6 +30,18 @@ function sendForm($s, $m) {
 		mail("ikelewis678@gmail.com", $s, $m, $headers);
 	}
 
+function success($t) {
+	if ($t == "order") {
+		header('Location: http://this-frags-fascists/kctitle/success.php?t=order');
+		die();
+	} elseif ($t == "contact") {
+		header('Location: http://this-frags-fascists/kctitle/success.php?t=contact');
+		die();
+	} else {
+		echo "Hmmm... seems we're hung up somewhere. It's not your fault... would you mind calling 509-773-5804? We'll get right on it!";
+	}
+}
+
 if (!$resp->is_valid) {
 // What happens when the CAPTCHA was entered incorrectly
 die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
@@ -81,7 +93,7 @@ if ($_POST["f"] == 'order') {
 		if ($sendToSeller == "on")
 			$out .= ", Seller";
 		if ($sendToListing == "on")
-			$out .= ", Listing";
+			$out .= ", Listing Agent";
 		if ($sendToLender == "on")
 			$out .= ", Lender";
 		if ($sendToSelling == "on")
@@ -92,6 +104,8 @@ if ($_POST["f"] == 'order') {
 		$subject = "Title/Escrow Order from " . $ownerName . " [KCTitle.net]";
 
 		sendForm($subject, $out);
+
+		success("order");
 
 	} elseif ($_POST["f"] == 'contact') {
 
@@ -106,6 +120,8 @@ if ($_POST["f"] == 'order') {
 		$subject = "Message from " . $name . " [KCTitle.net]";
 
 		sendForm($subject, $out);
+
+		success("contact");
 
 	} else {
 		echo "Something musta gone wrong. We're sorry. Would you mind calling 509-773-5804? We'll get right on it!";

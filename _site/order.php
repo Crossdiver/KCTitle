@@ -84,8 +84,8 @@ License: http://creativecommons.org/licenses/MIT
 	<nav class="top-nav">
 		<ul>
 			<li><a href="index.html" name="home" class="nav">Home</a></li>
-			<li><a href="contact.html" name="contact" class="nav">Contact</a></li>
-			<li><a href="order.html" name="order" class="nav">Order</a></li>
+			<li><a href="contact.php" name="contact" class="nav">Contact</a></li>
+			<li><a href="order.php" name="order" class="nav">Order</a></li>
 		</ul>
 	</nav>
 </header>
@@ -93,7 +93,12 @@ License: http://creativecommons.org/licenses/MIT
 <div class="content clearfix">
 
 <div role="main" class="main">
-   <section class="content">
+   <script>
+var RecaptchaOptions = {
+	theme : 'clean'
+};
+</script>
+<section class="content">
   <h1>Title / Escrow Order Form</h1>
   <form class="expandedform"  action="f.php" method="post">
   	<input type="hidden" name="f" value="order" />
@@ -209,11 +214,14 @@ License: http://creativecommons.org/licenses/MIT
   		<div class="row"><label for="note">Note: </label><textarea name="notes"></textarea></div>
   	</div>
 
+  	<div class="row">
+  	<label for=""></label>
   	<?php
           require_once('recaptchalib.php');
           $publickey = "6LdwpckSAAAAACzu6wTfcnj8RdgxnsNsBi1_FtLf"; // you got this from the signup page
           echo recaptcha_get_html($publickey);
-        ?>
+    ?>
+    </div>
 
   	<div class="row"><label for="submit"></label><input type="submit" value="Lick. Stamp. Flag up." name="submit"></div>
 

@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<script>
+var RecaptchaOptions = {
+	theme : 'clean'
+};
+</script>
 <section class="content">
   <h1>Title / Escrow Order Form</h1>
   <form class="expandedform"  action="f.php" method="post">
@@ -117,11 +122,14 @@ layout: default
   		<div class="row"><label for="note">Note: </label><textarea name="notes"></textarea></div>
   	</div>
 
+  	<div class="row">
+  	<label for=""></label>
   	<?php
           require_once('recaptchalib.php');
           $publickey = "6LdwpckSAAAAACzu6wTfcnj8RdgxnsNsBi1_FtLf"; // you got this from the signup page
           echo recaptcha_get_html($publickey);
-        ?>
+    ?>
+    </div>
 
   	<div class="row"><label for="submit"></label><input type="submit" value="Lick. Stamp. Flag up." name="submit"></div>
 
