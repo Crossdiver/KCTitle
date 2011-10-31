@@ -32,10 +32,10 @@ function sendForm($s, $m) {
 
 function success($t) {
 	if ($t == "order") {
-		header('Location: http://this-frags-fascists/kctitle/success.php?t=order');
+		header('Location: http://kctitle.net/success.php?t=order');
 		die();
 	} elseif ($t == "contact") {
-		header('Location: http://this-frags-fascists/kctitle/success.php?t=contact');
+		header('Location: http://kctitle.net/success.php?t=contact');
 		die();
 	} else {
 		echo "Hmmm... seems we're hung up somewhere. It's not your fault... would you mind calling 509-773-5804? We'll get right on it!";
