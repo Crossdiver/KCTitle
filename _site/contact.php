@@ -30,14 +30,6 @@ License: http://creativecommons.org/licenses/MIT
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" media="print" href="css/print.css">
-<!-- For progressively larger displays -->
-<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css">
-<link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/600.css">
-<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css">
-<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css">
-<!-- For Retina displays -->
-<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="css/2x.css">
 
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/libs/selectivizr-min.js"></script>
@@ -183,9 +175,7 @@ var RecaptchaOptions = {
 
 <!-- Scripts -->
 <script src="js/libs/jquery-1.6.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
-<script src="js/mylibs/helper.js"></script>
+<script src="js/scripts.js"></script>
 
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/libs/imgsizer.js"></script>

@@ -47,6 +47,7 @@ var RecaptchaOptions = {
 
   	<h3>Legal Description</h3>
   	<hr>
+  	<div class="legal">
 
 	<div class="row ">
 		<label for ="stdOwners">STD Owners: </label>
@@ -96,24 +97,38 @@ var RecaptchaOptions = {
 		<input type="text" name="limitedIns" placeholder="Insuring"/>
 	</div>
 
+	</div>
+
   	<h3>Send copies to:</h3>
   	<hr>
+
+  	<div class="copies">
 
   	<div class="row">
   	<label for="sendToOwner">Owner:</label>
   	<input type="checkbox" name="sendToOwner" />
+  	</div>
 
+  	<div class="row">
   	<label for="sendToSeller">Seller:</label>
   	<input type="checkbox" name="sendToSeller" />
+  	</div>
 
+  	<div class="row">
   	<label for="sendToListing">Listing Agent:</label>
   	<input type="checkbox" name="sendToListing" />
+  	</div>
 
+  	<div class="row">
   	<label for="sendToSelling">Selling Agent:</label>
   	<input type="checkbox" name="sendToSelling" />
-
+  	</div>
+  	
+  	<div class="row">
   	<label for="sendToLender">Lender:</label>
   	<input type="checkbox" name="sendToLender" />
+  	</div>
+
   	</div>
 
   	<div class="row" id="noteLink"><a href="javascript:addNote()">Add a note</a></div>

@@ -2,7 +2,7 @@
 
 320 and Up boilerplate extension
 Andy Clarke http://about.me/malarkey
-Keith Clark http://twitter.com/keithclarkcouk
+Keith Clark 
 Version: 2
 URL: http://stuffandnonsense.co.uk/projects/320andup/
 License: http://creativecommons.org/licenses/MIT/
@@ -58,7 +58,7 @@ button,
 input, 
 select, 
 textarea { 
-font-family : "Helvetica Neue", Helvetica, Arial, sans-serif; 
+font-family : "Palatino Linotype", "Book Antiqua", "Palatino", serif; 
 color : rgb(40,40,40); }
 
 /* 2. HEADINGS (320 and Up typography defaults) ==================================================== */
@@ -75,26 +75,26 @@ font-weight : bold; }
 h1 { 
 margin-bottom : .75em;
 font-size : 1.5em; /* 48 / 16 = 3 */
-line-height : 1; }
+line-height : 1.1; }
 
 h2 { 
 margin-bottom : .75em;
-font-size : 1.25em; /* 36 / 16 = 2 */
+font-size : 1.4em; /* 36 / 16 = 2 */
 line-height : 1; }
 
 h3 { 
 margin-bottom : 1em;
-font-size : 1em; /* 24 / 16 = 1.5 */
+font-size : 1.3em; /* 24 / 16 = 1.5 */
 line-height : 1; }
 
 h4 { 
 margin-bottom : 1.25em;
-font-size : 1em; /* 20 / 16 = 1.25 */
+font-size : 1.2em; /* 20 / 16 = 1.25 */
 line-height : 1; }
 
 h5 { 
-margin-bottom : 1.5em;
-font-size : 1em; /* 16 / 16 = 1 */ }
+margin-bottom : 1em;
+font-size : 1.1em; /* 16 / 16 = 1 */ }
 
 h6 { 
 font-size : 1em; /* 16 / 16 = 1 */ }
@@ -115,7 +115,7 @@ text-align : justify; }
 
 ul, 
 ol { 
-margin : 0.1 0 1.5em -24px; 
+margin : 0 0 1.5em 0px; 
 padding : 0 0 0 24px; }
 
 li ul, 
@@ -208,9 +208,6 @@ top : -.5em; }
 
 sub { 
 bottom : -.25em; }
-
-
-
 
 /* 4.LINKS ============================================================================= */
 
@@ -336,10 +333,202 @@ box-shadow : 0 0 2px rgb(255,0,0); }
 .no-boxshadow textarea:invalid {
 background-color : rgb(240,221,221); }
 
+
+
+
+input {
+  width: 100%;
+  margin-bottom: 28px;
+  height: 29px;
+}
+
+label {
+  display: block;
+}
+
+.legal input {
+  width: 81%;
+}
+
+.copies input[type="checkbox"] {
+  width: 20px;
+}
+
+.copies label {
+  position: relative;
+  top: -9px;
+  display: inline;
+}
+
+
+
+
 /* 8 BANNER 		============================================================================= */
 /* 9 NAVIGATION 	============================================================================= */
 /* 10 CONTENT 		============================================================================= */
 /* 11 MAIN 			============================================================================= */
+/* 12 COMPLEMENTARY ============================================================================= */
+/* 13 CONTENTINFO 	============================================================================= */
+
+/* 14 GLOBAL OBJECTS ============================================================================= */
+
+.clearfix:before, 
+.clearfix:after { 
+content : "\0020"; 
+display : block; 
+height : 0; 
+overflow : hidden; }
+
+.clearfix:after { 
+clear : both; }
+
+/* 15 VENDOR-SPECIFIC ============================================================================= */
+
+html { 
+-webkit-overflow-scrolling : touch; 
+-webkit-tap-highlight-color : rgb(52,158,219); 
+-webkit-text-size-adjust : 100%; 
+-ms-text-size-adjust : 100%; }
+
+.clearfix { 
+zoom : 1; }
+
+::-webkit-selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+::-moz-selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+::selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] { 
+-webkit-appearance : button; }
+
+::-webkit-input-placeholder {
+font-size : .875em; 
+line-height : 1.4; }
+
+input:-moz-placeholder { 
+font-size : .875em; 
+line-height : 1.4; }
+
+.ie7 img,
+.iem7 img { 
+-ms-interpolation-mode : bicubic; }
+
+input[type="checkbox"], 
+input[type="radio"] { 
+box-sizing : border-box; }
+
+input[type="search"] { 
+-webkit-box-sizing : content-box;
+-moz-box-sizing : content-box; }
+
+button::-moz-focus-inner, 
+input::-moz-focus-inner { 
+padding : 0;
+border : 0; }
+
+p {
+/* http://www.w3.org/TR/css3-text/#hyphenation */
+-webkit-hyphens : auto;
+-webkit-hyphenate-character : "\2010";
+-webkit-hyphenate-limit-after : 1;
+-webkit-hyphenate-limit-before : 3;
+-moz-hyphens : auto; }
+
+/* Non-semantic helper classes 
+
+.ir { display : block; 
+overflow : hidden; 
+background-repeat : no-repeat; 
+text-align : left; 
+text-indent : -999em; 
+direction : ltr; }
+
+.ir br { 
+display : none; }
+
+.hidden { 
+display : none; 
+visibility: hidden; }
+
+.visuallyhidden { 
+position : absolute;
+margin : -1px;
+padding : 0;
+height  : 1px;
+width : 1px;
+overflow : hidden;
+border : 0; 
+clip : rect(0 0 0 0); }
+
+.visuallyhidden.focusable:active, 
+.visuallyhidden.focusable:focus { 
+position: static;
+margin : 0; 
+height : auto; 
+width : auto;
+overflow: visible; 
+clip : auto; }
+
+.invisible { 
+visibility : hidden; } */
+
+/* 16 MODERNIZR ============================================================================= */
+
+/* audio */
+/* applicationcache */
+/* backgroundsize */
+/* borderimage */
+/* borderradius */
+/* boxshadow */
+/* canvas */
+/* canvastext */
+/* cssanimations */
+/* csscolumns */
+/* cssgradients */
+/* cssreflections*/
+/* csstransforms */
+/* csstransforms3d */
+/* csstransitions */
+/* draganddrop */
+/* flexbox */
+/* fontface */
+/* geolocation */
+/* hashchange */
+/* history */
+/* hsla */
+/* indexeddb */
+/* inlinesvg */
+/* localstorage */
+/* multiplebgs */
+/* opacity */
+/* postmessage */
+/* rgba */
+/* sessionstorage */
+/* smil */
+/* svg */
+/* svgclippaths */
+/* textshadow */
+/* touch */
+/* video */
+/* webgl */
+/* websqldatabase */
+/* websockets */
+/* webworkers */
+
+/* 17 TEMPLATE SPECIFICS ============================================================================= */
 
 
 
@@ -548,8 +737,163 @@ nav.top-nav li ul li.arrow {
   margin-bottom: 10px;
 }
 
+textarea {
+	width: 98.5%;
+	height: 100px;
+}
 
 
+
+
+
+
+/* 18 MEDIA QUERIES ============================================================================= */
+
+@media print {
+
+/* 1 ROOT ============================================================================= */
+
+* { 
+background : transparent !important; 
+color : black !important; 
+text-shadow : none !important; 
+filter : none !important; 
+-ms-filter : none !important; }
+
+@page { 
+margin : 0.5cm; }
+
+/* 2 HEADINGS ============================================================================= */
+
+h2, h3 { 
+orphans : 3; 
+widows : 3; 
+page-break-after : avoid; }
+
+/* 3 TYPOGRAPHY ============================================================================= */
+
+p { 
+orphans : 3; 
+widows : 3; }
+
+pre, blockquote { 
+border : 1px solid #999; 
+page-break-inside : avoid; }
+
+abbr[title]:after { 
+content : " (" attr(title) ")"; }
+
+/* 4 LINKS ============================================================================= */
+
+a, a:visited { 
+color : #444 !important; 
+text-decoration : underline; }
+
+a[href]:after { 
+content : " (" attr(href) ")"; }
+
+a[href^="javascript:"]:after, 
+a[href^="#"]:after { 
+content : ""; } 
+
+/* 5 FIGURES & IMAGES ============================================================================= */
+
+img { 
+max-width : 100% !important;
+page-break-inside : avoid; }
+
+/* 6 TABLES ============================================================================= */
+
+thead { 
+display : table-header-group; } 
+
+tr { 
+page-break-inside : avoid; }
+
+/* 7 FORMS ============================================================================= */
+/* 8 BANNER ============================================================================= */
+/* 9 NAVIGATION ============================================================================= */
+/* 10 CONTENT ============================================================================= */
+/* 11 MAIN ============================================================================= */
+/* 12 COMPLEMENTARY ============================================================================= */
+/* 13 CONTENTINFO ============================================================================= */
+/* 14 GLOBAL OBJECTS ============================================================================= */
+
+.ir a:after { 
+content : ""; } 
+
+/* 15 VENDOR-SPECIFIC ============================================================================= */
+/* 16 MODERNIZR ============================================================================= */
+/* 17 TEMPLATE SPECIFICS ============================================================================= */
+
+}
+
+/* 480px */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* 600px */
+@media only screen and (min-width: 600px) {
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+font-family : "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+font-weight : bold; }
+
+h1 { 
+margin-bottom : .75em;
+font-size : 3em; /* 48 / 16 = 3 */
+line-height : 1.2; }
+
+h2 { 
+margin-bottom : .75em;
+font-size : 2em; /* 36 / 16 = 2 */
+line-height : 1.2; }
+
+h3 { 
+margin-bottom : 1em;
+font-size : 1.5em; /* 24 / 16 = 1.5 */
+line-height : 1.3; }
+
+h4 { 
+margin-bottom : 1.25em;
+font-size : 1.25em; /* 20 / 16 = 1.25 */
+line-height : 1.25; }
+
+h5 { 
+margin-bottom : 1.5em;
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+h6 { 
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+textarea {
+  width: 50%;
+}
+
+#logo {
+	position: relative;
+	width: 85px;
+	top: -26px;
+}
+
+.imgmobile {
+	width: 70%;
+}
+
+.legaldesc {
+	margin-left: 28%;
+}
+
+hr {
+	position: relative;
+	top: -26px;
+}
 
 
 
@@ -595,173 +939,64 @@ nav.top-nav li ul li.arrow {
   margin-right: 0;
 }
 
-textarea {
-	width: 98.5%;
-	height: 100px;
+input, .legal input {
+  width: 53%;
+  margin-bottom: 10px;
+  height: 20px;
 }
 
+input[type="checkbox"], .copies input[type="checkbox"] {
+  width: 20px;
+}
 
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  height: 29px;
+}
 
+label, .copies label {
+  display: inline;
+  position: static;
+}
 
-/* 12 COMPLEMENTARY ============================================================================= */
-/* 13 CONTENTINFO 	============================================================================= */
+}
 
-/* 14 GLOBAL OBJECTS ============================================================================= */
+/* 768px */
+@media only screen and (min-width: 768px) {
 
-.clearfix:before, 
-.clearfix:after { 
-content : "\0020"; 
-display : block; 
-height : 0; 
-overflow : hidden; }
+}
 
-.clearfix:after { 
-clear : both; }
+/* 992px */
+@media only screen and (min-width: 992px) {
 
-/* 15 VENDOR-SPECIFIC ============================================================================= */
+body {
+	max-width: 885px;
+}
 
-html { 
--webkit-overflow-scrolling : touch; 
--webkit-tap-highlight-color : rgb(52,158,219); 
--webkit-text-size-adjust : 100%; 
--ms-text-size-adjust : 100%; }
+#logo {
+	top: -26px;
+}
 
-.clearfix { 
-zoom : 1; }
+#map {
+	position: absolute;
+	top: 630px;
+	right: 16%;
+	width: 200px;
+}
 
-::-webkit-selection { 
-background : rgb(23,119,175); 
-color : rgb(250,250,250); 
-text-shadow : none; }
+.nowrap {
+	clear: none;
+}
 
-::-moz-selection { 
-background : rgb(23,119,175); 
-color : rgb(250,250,250); 
-text-shadow : none; }
+}
 
-::selection { 
-background : rgb(23,119,175); 
-color : rgb(250,250,250); 
-text-shadow : none; }
+/* 1382px */
+@media only screen and (min-width: 1382px) {
 
-button, 
-input[type="button"], 
-input[type="reset"], 
-input[type="submit"] { 
--webkit-appearance : button; }
+}
 
-::-webkit-input-placeholder {
-font-size : .875em; 
-line-height : 1.4; }
+/* 2x */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (-o-min-device-pixel-ratio: 3/2), 
+only screen and (min-device-pixel-ratio: 1.5) {
 
-input:-moz-placeholder { 
-font-size : .875em; 
-line-height : 1.4; }
-
-.ie7 img,
-.iem7 img { 
--ms-interpolation-mode : bicubic; }
-
-input[type="checkbox"], 
-input[type="radio"] { 
-box-sizing : border-box; }
-
-input[type="search"] { 
--webkit-box-sizing : content-box;
--moz-box-sizing : content-box; }
-
-button::-moz-focus-inner, 
-input::-moz-focus-inner { 
-padding : 0;
-border : 0; }
-
-p {
-/* http://www.w3.org/TR/css3-text/#hyphenation */
--webkit-hyphens : auto;
--webkit-hyphenate-character : "\2010";
--webkit-hyphenate-limit-after : 1;
--webkit-hyphenate-limit-before : 3;
--moz-hyphens : auto; }
-
-/* Non-semantic helper classes 
-
-.ir { display : block; 
-overflow : hidden; 
-background-repeat : no-repeat; 
-text-align : left; 
-text-indent : -999em; 
-direction : ltr; }
-
-.ir br { 
-display : none; }
-
-.hidden { 
-display : none; 
-visibility: hidden; }
-
-.visuallyhidden { 
-position : absolute;
-margin : -1px;
-padding : 0;
-height  : 1px;
-width : 1px;
-overflow : hidden;
-border : 0; 
-clip : rect(0 0 0 0); }
-
-.visuallyhidden.focusable:active, 
-.visuallyhidden.focusable:focus { 
-position: static;
-margin : 0; 
-height : auto; 
-width : auto;
-overflow: visible; 
-clip : auto; }
-
-.invisible { 
-visibility : hidden; } */
-
-/* 16 MODERNIZR ============================================================================= */
-
-/* audio */
-/* applicationcache */
-/* backgroundsize */
-/* borderimage */
-/* borderradius */
-/* boxshadow */
-/* canvas */
-/* canvastext */
-/* cssanimations */
-/* csscolumns */
-/* cssgradients */
-/* cssreflections*/
-/* csstransforms */
-/* csstransforms3d */
-/* csstransitions */
-/* draganddrop */
-/* flexbox */
-/* fontface */
-/* geolocation */
-/* hashchange */
-/* history */
-/* hsla */
-/* indexeddb */
-/* inlinesvg */
-/* localstorage */
-/* multiplebgs */
-/* opacity */
-/* postmessage */
-/* rgba */
-/* sessionstorage */
-/* smil */
-/* svg */
-/* svgclippaths */
-/* textshadow */
-/* touch */
-/* video */
-/* webgl */
-/* websqldatabase */
-/* websockets */
-/* webworkers */
-
-/* 17 TEMPLATE SPECIFICS ============================================================================= */
+}
