@@ -95,7 +95,7 @@ var RecaptchaOptions = {
   	<h3>General Contact Info</h3>
   	<hr>
 
-  	<img class="imgmobile" style="width: 200px; float: right;" src="http://maps.googleapis.com/maps/api/staticmap?center=129+West+Main+Street+Goldendale,+WA+98620-8911&size=150x150&scale=2&maptype=hybrid&sensor=false">
+  	<img class="imgmobile contactmap" src="http://maps.googleapis.com/maps/api/staticmap?center=129+West+Main+Street+Goldendale,+WA+98620-8911&size=150x150&scale=2&maptype=hybrid&sensor=false">
 
   	<p>Address: <br>
   	129 West Main Street<br>

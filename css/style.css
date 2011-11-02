@@ -43,14 +43,13 @@ display : inline-block;
 
 html {
 overflow-y : scroll;
-background : rgb(255,255,255); 
-background : rgb(255,255,255) url(../img/tmp/grid.png) repeat-y 50% 0; }
+background : rgb(255,255,255); }
 
 body { 
 margin : 0 auto;
 padding : 0;
 width : 90% /* 252px */;
-font : 100%/1.4 Cambria, Georgia, Times, "Times New Roman";
+font : 100%/1.4 "Palatino Linotype", "Book Antiqua", "Palatino", serif;
 color : rgb(40,40,40); 
 background-color : transparent; }
 
@@ -58,7 +57,7 @@ button,
 input, 
 select, 
 textarea { 
-font-family : "Helvetica Neue", Helvetica, Arial, sans-serif; 
+font-family : "Palatino Linotype", "Book Antiqua", "Palatino", serif; 
 color : rgb(40,40,40); }
 
 /* 2. HEADINGS (320 and Up typography defaults) ==================================================== */
@@ -69,31 +68,31 @@ h3,
 h4, 
 h5, 
 h6 {
-font-family : "Helvetica Neue", Helvetica, Arial;
+font-family : "Palatino Linotype", "Book Antiqua", "Palatino", serif;
 font-weight : bold; }
 
 h1 { 
 margin-bottom : .75em;
-font-size : 3em; /* 48 / 16 = 3 */
+font-size : 1.5em; /* 48 / 16 = 3 */
 line-height : 1.2; }
 
 h2 { 
 margin-bottom : .75em;
-font-size : 2em; /* 36 / 16 = 2 */
-line-height : 1.2; }
+font-size : 1.4em; /* 36 / 16 = 2 */
+line-height : 1.1; }
 
 h3 { 
 margin-bottom : 1em;
-font-size : 1.5em; /* 24 / 16 = 1.5 */
-line-height : 1.3; }
+font-size : 1.3em; /* 24 / 16 = 1.5 */
+line-height : 1; }
 
 h4 { 
 margin-bottom : 1.25em;
-font-size : 1.25em; /* 20 / 16 = 1.25 */
-line-height : 1.25; }
+font-size : 1.2em; /* 20 / 16 = 1.25 */
+line-height : 1; }
 
 h5 { 
-margin-bottom : 1.5em;
+margin-bottom : 1.1em;
 font-size : 1em; /* 16 / 16 = 1 */ }
 
 h6 { 
@@ -115,7 +114,7 @@ text-align : justify; }
 
 ul, 
 ol { 
-margin : 0 0 1.5em -24px; 
+margin : 0 0 1.5em 0px; 
 padding : 0 0 0 24px; }
 
 li ul, 
@@ -503,7 +502,7 @@ visibility : hidden; } */
 
 
 html {
-	background: url('../img/bg4.gif') repeat;
+	background: #a0c2cb ;/*url('../img/bg4.gif') repeat;*/
 }
 
 
@@ -964,6 +963,11 @@ textarea {
 hr {
 	position: relative;
 	top: -26px;
+}
+
+.contactmap {
+  width: 100px;
+  float: right;
 }
 
 
