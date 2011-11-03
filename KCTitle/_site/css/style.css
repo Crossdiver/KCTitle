@@ -706,57 +706,23 @@ nav.top-nav li ul li.arrow {
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-.expandedform {
-  overflow: hidden;
-}
-.expandedform .row {
-  padding: .3em 0;
-  white-space: nowrap;
-  overflow: hidden;
-  clear: both;
-}
-.expandedform label, .expandedform .row p, .expandedform .row div, 
-.expandedform input, .expandedform select, .expandedform textarea {
-  float: left;
-}
-/* change column widths for labels and inputs */
-.expandedform .text {
-  width: 80%;
-}
-.expandedform label, .expandedform .row p {
-  width: 33%;
-  margin: 0em 0.5em 0.2em 0;
-  text-align: right;
-  white-space: normal;
-  overflow: hidden;
-
-}
-.expandedform .row div {
-  white-space: nowrap;
-  overflow: hidden;
-  clear: none;
-}
-/* labels and form inputs inside of divs should not float */
-.expandedform .row div * {
-  float: none;
-  clear: none;
-}
-.expanded input.checkbox, .expanded input.radio, .expanded select {
-  margin-top: 1.5em;
-}
-.expandedform div div input {
-  margin-right: 0;
-}
-
 textarea {
 	width: 96%;
 	height: 100px;
 }
+
+input {
+	width: 100%;
+	display: block;
+}
+
+input[type="checkbox"] {
+	width: 20px;
+	float: none;
+	display: inline;
+}
+
+
 
 
 
@@ -983,6 +949,54 @@ nav.top-nav li a {
   background-color: #ccc; 
   font-size: 12px; 
   color: #222;
+}
+
+
+input {
+	width: 30%;
+	display: block;
+}
+
+.expandedform {
+  overflow: hidden;
+}
+.expandedform .row {
+  padding: .3em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  clear: both;
+}
+.expandedform label, .expandedform .row p, .expandedform .row div, 
+.expandedform input, .expandedform select, .expandedform textarea {
+  float: left;
+}
+/* change column widths for labels and inputs */
+.expandedform .text {
+  width: 80%;
+}
+.expandedform label, .expandedform .row p {
+  width: 33%;
+  margin: 0em 0.5em 0.2em 0;
+  text-align: right;
+  white-space: normal;
+  overflow: hidden;
+
+}
+.expandedform .row div {
+  white-space: nowrap;
+  overflow: hidden;
+  clear: none;
+}
+/* labels and form inputs inside of divs should not float */
+.expandedform .row div * {
+  float: none;
+  clear: none;
+}
+.expanded input.checkbox, .expanded input.radio, .expanded select {
+  margin-top: 1.5em;
+}
+.expandedform div div input {
+  margin-right: 0;
 }
 
 

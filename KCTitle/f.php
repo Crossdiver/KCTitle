@@ -51,16 +51,19 @@ if ($_POST["f"] == 'order') {
 
 		extract($_POST, EXTR_SKIP);
 
+		if ($escrowRequested == "on")
+			$out .= "Escrow requested.";
 
-		# OWNER section
-		$out .= "<b>Owner:</b><br>
+
+		# SELLER section
+		$out .= "<b>Seller:</b><br>
 					Name: " . $ownerName . "<br>
 					Email: " . $ownerEmail . "<br>
 					Phone: " . $ownerPhone . "<br>
 					Address: " . $ownerAddress . "<br><br>";
 
-		# BUYER section
-		$out .= "<b>Buyer:</b><br>
+		# BUYER / BORROWER section
+		$out .= "<b>Buyer / Borrower:</b><br>
 					Name: " . $buyerName . "<br>
 					Email: " . $buyerEmail . "<br>
 					Phone: " . $buyerPhone . "<br>
@@ -98,7 +101,7 @@ if ($_POST["f"] == 'order') {
 		if ($sendToSelling == "on")
 			$out .= ", Selling Agent";
 		
-		$out .= "<br><b>Note:</b><br>" . $note;
+		$out .= "<br><br><b>Note:</b><br>" . $note;
 
 		$out .= "</body></html>";
 

@@ -10,7 +10,7 @@ var RecaptchaOptions = {
   <h1>Title / Escrow Order Form</h1>
   <form class="expandedform"  action="f.php" method="post">
   	<input type="hidden" name="f" value="order" />
-  	<h3>Owner</h3>
+  	<h3>Seller</h3>
   	<hr>
 
   	<div class="row"><label for="ownerName">Owner: </label>
@@ -23,7 +23,7 @@ var RecaptchaOptions = {
 
   	<div class="row"><label for="ownerAddress">Address: </label><input type="text" name="ownerAddress" required /></div>
   	
-  	<h3>Buyer</h3>
+  	<h3>Buyer / Borrower</h3>
   	<hr>
 
   	<div class="row"><label for="buyerName">Buyer: </label>
@@ -129,6 +129,11 @@ var RecaptchaOptions = {
   	<div class="row">
   	<label for="sendToLender">Lender:</label>
   	<input type="checkbox" name="sendToLender" />
+  	</div>
+
+	<div class="row">
+  	<label for="sendToLender">Escrow Requested:</label>
+  	<input type="checkbox" name="escrowRequested" />
   	</div>
 
   	</div>
