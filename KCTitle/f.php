@@ -27,7 +27,7 @@ require_once('recaptchalib.php');
 function sendForm($s, $m) {
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		mail("kctitle@kctitle.net", $s, $m, $headers);
+		mail("ikelewis678@gmail.com", $s, $m, $headers);
 	}
 
 function success($t) {
@@ -69,10 +69,11 @@ if ($_POST["f"] == 'order') {
 		# PROPERTY section
 		$out .= "<b>Property:</b><br>
 					Address: " . $propertyAddress . "<br>
-					Parcel Number: " . $parcelNumber . "<br><br>";
+					Parcel Number: " . $parcelNumber . "<br>
+					Legal Description: " . $legalDescription . "<br><br>";
 
 		# LEGAL DESCRIPTION section
-		$out .= "<b>Legal Description:</b><br>
+		$out .= "<b>Product(s) Requested:</b><br>
 					<p style=\"font-family: monospace;\">
 					STD Owner............ " . $stdOwnersVal . " -- Insured by: " . $stdOwnersIns . "<br>
 					Purchasers........... " . $purchasersVal . " -- Insured by: " . $purchasersIns . "<br>
@@ -96,9 +97,8 @@ if ($_POST["f"] == 'order') {
 			$out .= ", Lender";
 		if ($sendToSelling == "on")
 			$out .= ", Selling Agent";
-		if ($note) {
-			$out .= "<br><b>Note:</b><br>" . $note;
-		}
+		
+		$out .= "<br><b>Note:</b><br>" . $note;
 
 		$out .= "</body></html>";
 

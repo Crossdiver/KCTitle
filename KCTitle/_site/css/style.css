@@ -627,7 +627,7 @@ html[xmlns] .clear {
 
 nav.top-nav { 
   background-color: #ccc; 
-  height: 35px;
+  height: 26px;
 }
 
 nav.top-nav ul {
@@ -648,12 +648,12 @@ nav.top-nav li.drop a {
 }
 
 nav.top-nav li a {
-  display: block; 
-  padding: 9px 23px 10px; 
-  text-decoration: none; 
-  background-color: #ccc; 
-  font-size: 12px; 
-  color: #222;
+display: block;
+padding: 5px;
+text-decoration: none;
+background-color: #CCC;
+font-size: 12px;
+color: #222;
 }
 
 nav.top-nav li a:hover {
@@ -754,7 +754,7 @@ nav.top-nav li ul li.arrow {
 }
 
 textarea {
-	width: 98.5%;
+	width: 96%;
 	height: 100px;
 }
 
@@ -966,8 +966,23 @@ hr {
 }
 
 .contactmap {
-  width: 100px;
+  width: 200px;
   float: right;
+}
+
+nav.top-nav { 
+  background-color: #ccc; 
+  height: 35px;
+}
+
+
+nav.top-nav li a {
+  display: block; 
+  padding: 9px 23px 10px; 
+  text-decoration: none; 
+  background-color: #ccc; 
+  font-size: 12px; 
+  color: #222;
 }
 
 

@@ -72,7 +72,7 @@ var RecaptchaOptions = {
     ?>
     </div>
 
-  	<div class="row"><label for="submit"></label><input type="submit" value="Lick. Stamp. Flag up." name="submit"></div>
+  	<div class="row"><label for="submit"></label><input type="submit" value="Submit" name="submit"></div>
 
   </form>
 

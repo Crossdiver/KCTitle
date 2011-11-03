@@ -127,9 +127,11 @@ var RecaptchaOptions = {
 
   	<div class="row"><label for="parcelNumber">Parcel Number: </label><input type="num" name="parcelNumber" required /></div>
 
+	<div class="row"><label for="parcelNumber">Legal Description: </label><input type="num" name="legalDescription" required /></div>
+
   	<img class="imgmobile imgcenter hide" id="map" src="" />
 
-  	<h3>Legal Description</h3>
+  	<h3>Product(s) Requested</h3>
   	<hr>
   	<div class="legal">
 
@@ -230,7 +232,7 @@ var RecaptchaOptions = {
     ?>
     </div>
 
-  	<div class="row"><label for="submit"></label><input type="submit" value="Lick. Stamp. Flag up." name="submit"></div>
+  	<div class="row"><label for="submit"></label><input type="submit" value="Submit" name="submit"></div>
 
 </section>
 
@@ -257,6 +259,7 @@ var RecaptchaOptions = {
 	}
 
 </script>
+
 </div>
 
 <div role="complementary" id="complementary">
