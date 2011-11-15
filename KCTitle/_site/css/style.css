@@ -502,7 +502,7 @@ visibility : hidden; } */
 
 
 html {
-	background: #a0c2cb ;/*url('../img/bg4.gif') repeat;*/
+	background: url('../img/kctitlebg.png') repeat fixed; /* #a0c2cb ;*/
 }
 
 
@@ -720,6 +720,11 @@ input[type="checkbox"] {
 	width: 20px;
 	float: none;
 	display: inline;
+}
+
+
+#recaptcha_widget_div {
+	margin: 15px 0px 15px 0px;
 }
 
 
@@ -998,8 +1003,6 @@ input {
 .expandedform div div input {
   margin-right: 0;
 }
-
-
 
 
 }

@@ -1,9 +1,10 @@
 ---
 layout: default
+title: Title / Escrow Order Form
 ---
 <script>
 var RecaptchaOptions = {
-	theme : 'clean'
+	theme : 'white'
 };
 </script>
 <section class="content">

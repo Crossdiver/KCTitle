@@ -19,7 +19,7 @@ License: http://creativecommons.org/licenses/MIT
 <head>
 <meta charset="utf-8">
 
-<title> Klickitat County Title Company </title>
+<title> Contact Us |  Klickitat County Title Company </title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -71,13 +71,14 @@ License: http://creativecommons.org/licenses/MIT
 
 <header role="banner">
 	<div id="logo"><img src="img/Logo-small.png"></div>
-	<h1>Klickitat County Title Company</h1>
+	<a href="/" style="text-decoration: none;"><h1>Klickitat County Title Company</h1></a>
 
 	<nav class="top-nav">
 		<ul>
 			<li><a href="index.html" name="home" class="nav">Home</a></li>
 			<li><a href="contact.php" name="contact" class="nav">Contact</a></li>
 			<li><a href="order.php" name="order" class="nav">Order</a></li>
+			<li><a href="service.php" name="service" class="nav">Service</a></li>
 		</ul>
 	</nav>
 </header>
@@ -87,7 +88,7 @@ License: http://creativecommons.org/licenses/MIT
 <div role="main" class="main">
    <script>
 var RecaptchaOptions = {
-	theme : 'clean'
+	theme : 'white'
 };
 </script>
 <section class="content">
@@ -109,28 +110,28 @@ var RecaptchaOptions = {
 
   	<p>Manager: 
 	  	<ul>
-	  		<li><b>Shawn Phipps</b> - County Manager/Title Officer - <a href="mailto:Shawn@kctitle.net">Shawn@kctitle.net</a></li>
+	  		<li><b>Shawn Phipps</b> - County Manager/Title Officer - Sha<a href="http://www.google.com/recaptcha/mailhide/d?k=01D0uqEFdTlTL9wy8fQ_h33Q==&amp;c=DCQjgAMZZX2-TkOVWZgBtz5KF3ZVTHgOlCCYElXmVw4=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501D0uqEFdTlTL9wy8fQ_h33Q\75\75\46c\75DCQjgAMZZX2-TkOVWZgBtz5KF3ZVTHgOlCCYElXmVw4\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@kctitle.net</li>
 	  	</ul>
 	</p>
  
 	<p>Title:
 		<ul>
-			<li><b>Ron Nelson</b> - Advisory Title Officer - <a href="mailto:Ron@kctitle.net">Ron@kctitle.net</a></li>
-			<li><b>Kelli Marshall</b> - Title Examiner - <a href="mailto:Kelli@kctitle.net">Kelli@kctitle.net</a></li>
+			<li><b>Ron Nelson</b> - Advisory Title Officer - Ron<a href="http://www.google.com/recaptcha/mailhide/d?k=01D0uqEFdTlTL9wy8fQ_h33Q==&amp;c=rTWlkB7gzqmdPJ3z6qpR8g==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501D0uqEFdTlTL9wy8fQ_h33Q\75\75\46c\75rTWlkB7gzqmdPJ3z6qpR8g\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@kctitle.net</li>
+			<li><b>Kelli Marshall</b> - Title Examiner - Kel<a href="http://www.google.com/recaptcha/mailhide/d?k=01D0uqEFdTlTL9wy8fQ_h33Q==&amp;c=UddsnKzNGDIkmAcOXT8v0plqXSYVmJVfbO-wAP3_XHo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501D0uqEFdTlTL9wy8fQ_h33Q\75\75\46c\75UddsnKzNGDIkmAcOXT8v0plqXSYVmJVfbO-wAP3_XHo\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@kctitle.net</li>
 		</ul>
 	</p>
 		 
 	<p>Escrow:
 		<ul>
-			<li><b>Brooke Johnson</b> - Limited Practice Officer/Manager - <a href="mailto:Brooke@kctitle.net">Brooke@kctitle.net</a></li>
-			<li><b>Karol Tate</b> - Escrow Closer - <a href="mailto:Karol@kctitle.net">Karol@kctitle.net</a></li>
-			<li><b>Shayne Thacker</b> - Collection Services/ Escrow Assistant - <a href="mailto:Shayne@kctitle.net">Shayne@kctitle.net</a></li>
+			<li><b>Brooke Johnson</b> - Limited Practice Officer/Manager - Bro<a href="http://www.google.com/recaptcha/mailhide/d?k=01D0uqEFdTlTL9wy8fQ_h33Q==&amp;c=mEw66f2D39RpToyRPxxOfJcSy5Wj5-Ij8bvIc3CrIAE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501D0uqEFdTlTL9wy8fQ_h33Q\75\75\46c\75mEw66f2D39RpToyRPxxOfJcSy5Wj5-Ij8bvIc3CrIAE\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@kctitle.net</li>
+			<li><b>Karol Tate</b> - Escrow Closer - Kar<a href="http://www.google.com/recaptcha/mailhide/d?k=01D0uqEFdTlTL9wy8fQ_h33Q==&amp;c=1SpGb6k--xGBmyg41VuafdbYzZNNmNLLTpZAhr5NVtI=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501D0uqEFdTlTL9wy8fQ_h33Q\75\75\46c\0751SpGb6k--xGBmyg41VuafdbYzZNNmNLLTpZAhr5NVtI\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@kctitle.net</li>
+			<li><b>Shayne Thacker</b> - Collection Services/ Escrow Assistant - Sha<a href="http://www.google.com/recaptcha/mailhide/d?k=01D0uqEFdTlTL9wy8fQ_h33Q==&amp;c=loWywRXCrzghXTW2nE44HU6fT5g22CUkrHESKoIndIM=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501D0uqEFdTlTL9wy8fQ_h33Q\75\75\46c\75loWywRXCrzghXTW2nE44HU6fT5g22CUkrHESKoIndIM\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@kctitle.net</li>
 		</ul>
 	</p>
 	 
 	<p>Accounts Receivable:
 		<ul>
-			<li><b>Janet Lieurance</b> - <a href="mailto:Janet@kctitle.net">Janet@kctitle.net</a></li>
+			<li><b>Janet Lieurance</b> - Jan<a href="http://www.google.com/recaptcha/mailhide/d?k=01D0uqEFdTlTL9wy8fQ_h33Q==&amp;c=apOuuWFXdcyMrCPQ7sHtcSb_numx8Y7E3lLmGj6lwK4=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501D0uqEFdTlTL9wy8fQ_h33Q\75\75\46c\75apOuuWFXdcyMrCPQ7sHtcSb_numx8Y7E3lLmGj6lwK4\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@kctitle.net</li>
 		</ul>
 	</p>
 

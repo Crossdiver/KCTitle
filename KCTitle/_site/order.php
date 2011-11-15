@@ -19,7 +19,7 @@ License: http://creativecommons.org/licenses/MIT
 <head>
 <meta charset="utf-8">
 
-<title> Klickitat County Title Company </title>
+<title> Title / Escrow Order Form |  Klickitat County Title Company </title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -71,13 +71,14 @@ License: http://creativecommons.org/licenses/MIT
 
 <header role="banner">
 	<div id="logo"><img src="img/Logo-small.png"></div>
-	<h1>Klickitat County Title Company</h1>
+	<a href="/" style="text-decoration: none;"><h1>Klickitat County Title Company</h1></a>
 
 	<nav class="top-nav">
 		<ul>
 			<li><a href="index.html" name="home" class="nav">Home</a></li>
 			<li><a href="contact.php" name="contact" class="nav">Contact</a></li>
 			<li><a href="order.php" name="order" class="nav">Order</a></li>
+			<li><a href="service.php" name="service" class="nav">Service</a></li>
 		</ul>
 	</nav>
 </header>
@@ -87,7 +88,7 @@ License: http://creativecommons.org/licenses/MIT
 <div role="main" class="main">
    <script>
 var RecaptchaOptions = {
-	theme : 'clean'
+	theme : 'white'
 };
 </script>
 <section class="content">

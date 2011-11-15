@@ -10,6 +10,10 @@ layout: default
   	echo "Thanks so much for your order. You'll hear from us shortly!";
   } elseif ($_GET["t"] == "contact") {
   	echo "Thanks so much for contacting us. You'll hear from us shortly!";
+  } elseif ($_GET["t"] == "contact") {
+	echo "Thanks for requesting a service order. You'll hear from us shortly!";
+  } else {
+	echo "Thanks so much for contacting us. You'll hear from us shortly!";
   }
 
   ?>

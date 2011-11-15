@@ -15,6 +15,8 @@
 
 <body>
 
+<h1>Sending form real quick...</h1>
+
 <?php
 require_once('recaptchalib.php');
 
@@ -27,7 +29,7 @@ require_once('recaptchalib.php');
 function sendForm($s, $m) {
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		mail("ikelewis678@gmail.com", $s, $m, $headers);
+		mail("kctitle@kctitle.net", $s, $m, $headers);
 	}
 
 function success($t) {
@@ -115,7 +117,7 @@ if ($_POST["f"] == 'order') {
 
 		extract($_POST, EXTR_SKIP);
 
-		$out = "<html><head><title>Sending...</title></head><style>.heading {color: #777;}.heading a {color: #777}</style><body><span class=\"heading\">Hi there,<br>You just got an email from " . $name . " (<a href=\"mailto:" . $email . "\">" . $email . "</a>) via the website. <br>------</span><br>";
+		$out = "<html><style>.heading {color: #777;}.heading a {color: #777}</style><body><span class=\"heading\">Hi there,<br>You just got an email from " . $name . " (<a href=\"mailto:" . $email . "\">" . $email . "</a>) via the website. <br>------</span><br>";
 
 		$out .= "<p style=\"font-size: 1.2em;\">" . stripslashes(nl2br($message)) . "</p>";
 
@@ -126,6 +128,39 @@ if ($_POST["f"] == 'order') {
 		sendForm($subject, $out);
 
 		success("contact");
+
+	} elseif ($_POST["f"] == 'service') {
+
+		extract($_POST, EXTR_SKIP);
+
+		$out = "<html><style>.heading {color: #777;} .heading a {color: #777}</style><body><span class=\"heading\">Hi there,<br>You just got a customer service request from " . $name . " (<a href=\"mailto:" . $email . "\">" . $email . "</a>) via the website. <br>------</span><br>";
+
+		$out .= "<b>Requester's Information</b><br><br>";
+
+		$out .= "<b>Name:</b><br>" . $name . "<br>";
+		$out .= "<b>Email:</b><br>" . $email . "<br>";
+		$out .= "<b>Phone:</b><br>" . $phone . "<br><br>";
+
+		$out .= "<b>Property Information</b><br><br>";
+
+		$out .= "<b>Owner:</b><br>" . $owner . "<br>";
+		$out .= "<b>Situs Address:</b><br>" . $situsAddress . "<br>";
+		$out .= "<b>Tax Parcel:</b><br>" . $taxParcel . "<br>";
+		$out .= "<b>Tax Names:</b><br>" . $taxNames . "<br>";
+		$out .= "<b>Acres:</b><br>" . $acres . "<br>";
+		$out .= "<b>Taxes:</b><br>" . $taxes . "<br>";
+		$out .= "<b>Land:</b><br>" . $land . "<br>";
+		$out .= "<b>Improvements:</b><br>" . $improvements . "<br><br>";
+
+		$out .= "<b>Notes:</b><br>" . stripslashes(nl2br($notes));
+
+		$out .= "</body></html>";
+
+		$subject = "Message from " . $name . " [KCTitle.net]";
+
+		sendForm($subject, $out);
+
+		success("service");
 
 	} else {
 		echo "Something musta gone wrong. We're sorry. Would you mind calling 509-773-5804? We'll get right on it!";

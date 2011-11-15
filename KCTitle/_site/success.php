@@ -71,13 +71,14 @@ License: http://creativecommons.org/licenses/MIT
 
 <header role="banner">
 	<div id="logo"><img src="img/Logo-small.png"></div>
-	<h1>Klickitat County Title Company</h1>
+	<a href="/" style="text-decoration: none;"><h1>Klickitat County Title Company</h1></a>
 
 	<nav class="top-nav">
 		<ul>
 			<li><a href="index.html" name="home" class="nav">Home</a></li>
 			<li><a href="contact.php" name="contact" class="nav">Contact</a></li>
 			<li><a href="order.php" name="order" class="nav">Order</a></li>
+			<li><a href="service.php" name="service" class="nav">Service</a></li>
 		</ul>
 	</nav>
 </header>
@@ -94,6 +95,10 @@ License: http://creativecommons.org/licenses/MIT
   	echo "Thanks so much for your order. You'll hear from us shortly!";
   } elseif ($_GET["t"] == "contact") {
   	echo "Thanks so much for contacting us. You'll hear from us shortly!";
+  } elseif ($_GET["t"] == "contact") {
+	echo "Thanks for requesting a service order. You'll hear from us shortly!";
+  } else {
+	echo "Thanks so much for contacting us. You'll hear from us shortly!";
   }
 
   ?>
@@ -101,6 +106,7 @@ License: http://creativecommons.org/licenses/MIT
 
   
 </section>
+
 </div>
 
 <div role="complementary" id="complementary">
