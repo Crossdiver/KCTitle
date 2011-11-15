@@ -37,6 +37,8 @@ function success($t) {
 		echo "<script language=javascript>window.location = \"success.php?t=order\"</script>";
 	} elseif ($t == "contact") {
 		echo "<script language=javascript>window.location = \"success.php?t=contact\"</script>";
+	} elseif ($t == "service") {
+		echo "<script language=javascript>window.location = \"success.php?t=service\"</script>";
 	} else {
 		echo "Hmmm... seems we're hung up somewhere. It's not your fault... would you mind calling 509-773-5804? We'll get right on it!";
 	}
